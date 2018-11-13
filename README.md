@@ -9,10 +9,10 @@ a symetric encryption scheme to encrypt and decrypt single bit messages.
 
 The final version of GrueLattice is not planed to be, as for now, published.
 
-** TODO **
-- add HMAC sinature
+** What is in the upper version **
+- HMAC sinature for user authentication
 - communication with the server
-- construct the lattice based blockchain 
+- lattice based blockchain to store and secured the data
 
 ### Requirements
 GrueLattice requires the FFTW 3 librairy available at <http://www/fftw.org/download.html>, and a c++ compiler.
@@ -29,7 +29,7 @@ To build the librairy, just run ```make```.
 
 You can test the librairy by running the test program ```grueLattice```.
 
-### Tests and stats
+### Tests
 
 In case you want to modify parameters and check correctness of the scheme, you can run the different unit tests in the `./tests` folder.
 
@@ -37,6 +37,8 @@ In case you want to modify parameters and check correctness of the scheme, you c
     cd tests/
     make
 ```
+
+### Stats (please wait for this --> rewritting procedure in action)
 
 In the `stats` folder, you have one program for each elementary operations and one global program that covers the whole scheme. These programs execute the operation(s) and measure the output error.
 The input error variances for each operation is set, by default, to the expected output value of the operation that comes just before during a complete gate execution, for the given parameter sets.
